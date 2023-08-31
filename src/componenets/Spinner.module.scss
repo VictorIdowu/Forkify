@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.spinner {
+  font-size: 6rem;
+  color: $color-primary;
+  animation: rotate 2s infinite linear;
+
+  &-div {
+    margin: 5rem auto;
+    text-align: center;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
